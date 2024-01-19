@@ -34,6 +34,7 @@ app.get("/download", async (req, res) => {
 //Insta reel downloader
 app.get("/insta-reel-download", async (req, res) => {
   try {
+    res.send('insta reel downloader...')
     const url = req.body.url;
     const dataList = await instagramDl(url);
     res.json({ message: "Success", data: dataList });
