@@ -8,6 +8,14 @@
   ],
   "routes": [
     {
+      "src": "/download",
+      "dest": "index.js"
+    },
+    {
+      "src": "/insta-reel-download",
+      "dest": "index.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "index.js"
     }
