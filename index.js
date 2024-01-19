@@ -3,7 +3,9 @@ const app = express();
 const cors = require("cors");
 const instagramDl = require("@sasmeee/igdl");
 
+//cors
 app.use(cors());
+//middleware
 app.use(express.json());
 
 app.get("/", (req, res) => {
